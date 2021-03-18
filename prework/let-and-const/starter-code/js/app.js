@@ -33,11 +33,10 @@ function displayPics(){
     let rando = makeRandom();
     while(!viewed.includes(rando)){
       viewed.push(rando);
-      console.log(rando);
     }
   }
   // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the letiable declaration from `let to `let`.
-  // PUT YOUR RESPONSE IN THIS COMMENT
+  // PUT YOUR RESPONSE IN THIS COMMENT : **HERE IS THE ANSWER**  using var make the variable a global one no matter where it is used, let is used to declear the variable locally to the method it's used in. so when we turned the var to let the variable rando became undefined because it's just defined in the while loop.
   console.log(viewed);
 
   for (let i = 0; i < 3; i++){
